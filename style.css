@@ -1,0 +1,378 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+div.hero-img {
+    background-image: url(images/forest.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+div.top-bar {
+    background: rgba(0, 0, 0, 0.25);
+    color: #fff;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+div.burger {
+    display: none;
+}
+
+div.nav-bar > ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0; 
+}
+
+div.nav-bar > ul > li > a {
+    padding-right: 60px;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+}
+
+div.nav-bar > ul > li > a:hover {
+    font-weight: bold;
+}
+
+div.site-title > a {
+    font-size: 27px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* div.hero-heading-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+div.hero-heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.hero-heading {
+    color: #fff;
+    font-size: 45px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+i.fa-tree {
+    color: #0f9405;
+    font-size: 62px;
+}
+
+div.hero-btn {
+    display: inline-block;
+    margin-top: 25px;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+div.hero-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+div.needs {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+p.needs-heading {
+    color: #0f9405;
+    font-size: 35px;
+}
+
+p.needs-text {
+    font-size: 20px;
+    width: 540px;
+    text-align: center;
+    margin: auto;
+}
+
+div.two-blocks-container {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-bottom: 200px;
+}
+
+div.two-blocks {
+    width: 400px;
+}
+
+div.two-blocks-heading {
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+i.fa-bolt,
+i.fa-clock {
+    color: #0f9405;
+    font-size: 37px;
+    margin-bottom: 20px;
+}
+
+div.two-blocks-text {
+    color: #0f9405;
+    font-size: 18px;
+}
+
+div.black-strip-container {
+    height: 350px;
+    background-color: #000;
+    margin-bottom: 200px;
+    display: flex;
+}
+
+img.tree-logs {
+    height: 350px;
+}
+
+div.black-strip-content {
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 450px;
+    margin: auto;
+}
+
+div.black-strip-heading {
+    color: #0f9405;
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+div.black-strip-text {
+    font-size: 18px;
+}
+
+div.wood-container {
+    background: url(images/wood.jpg);
+    background-size: cover;
+    height: 500px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.wood-text {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+div.social{
+    display: flex;
+    justify-content: center;
+    color: #0f9405;
+    font-size: 45px;
+    margin-bottom: 200px;
+}
+
+i.fa-twitter,
+i.fa-facebook-f,
+i.fa-whatsapp {
+    color: #0f9405;
+    text-decoration: none;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+}
+
+br.footer-break {
+    display: none;
+}
+
+i.fa-heart {
+    color: #0f9405;
+}
+
+div.footer-text > a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 720px) { 
+
+    div.top-bar {
+        display: block;
+    }
+
+    div.site-title > a{
+        font-size: 18px;
+    }
+
+    div.site-title {
+        display: inline;
+    }
+
+    div.burger {
+        display: block;
+        cursor: pointer;
+        float: right;
+    }
+
+    img.burger-svg {
+        margin-top: -3.5px;
+    }
+
+    div.nav-bar {
+        display: none;
+        padding: 50px 0px 10px 0px;
+    }
+
+    div.nav-bar > ul {
+       display: block;
+       padding-left: 0px
+    }
+
+    div.nav-bar > ul > li {
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    div.nav-bar > ul > li > a {
+        padding-right: 0px;
+    }
+
+    div.hero-heading {
+        font-size: 25px;
+        padding: 15px;
+    }
+
+    i.fa-tree {
+        font-size: 34px;
+    }
+
+    div.hero-btn {
+        margin-top: 25px;
+        font-size: 18px;
+    }
+
+    div.needs {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    p.needs-heading {
+        font-size: 24px;
+    }
+    
+    p.needs-text {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    div.two-blocks-container {
+        flex-direction: column;
+        margin-bottom: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    div.two-blocks {
+        width: 100%;
+    }
+    
+    div.two-blocks-heading {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    i.fa-bolt,
+    i.fa-clock {
+        font-size: 32px;
+    }
+    
+    div.two-blocks-text {
+        color: #0f9405;
+        font-size: 15px;
+        margin-bottom: 100px;
+    }
+
+    div.black-strip-container {
+        height: 200px;
+        margin-bottom: 75px;
+        align-items: center;
+    }
+
+    div.black-strip-content {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    
+    img.tree-logs {
+        height: 150px;
+    }
+    
+    div.black-strip-heading {
+        font-size: 20px;
+    }
+    
+    div.black-strip-text {
+        font-size: 15px;
+    }
+
+    div.wood-container {
+        height: 150px;
+        margin-bottom: 175px;
+    }
+    
+    div.wood-text {
+        font-size: 25px;
+    }
+
+    div.social {
+        font-size: 30px;
+        margin-bottom: 75px;
+    }
+    
+    footer {
+        height: 100px;
+        font-size: 18px;
+    }
+
+    br.footer-break {
+        display: block;
+    }
+}
